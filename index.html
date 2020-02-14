@@ -5,10 +5,15 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/33224bbaf5.js" crossorigin="anonymous"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
 
     <style>
         body{
             margin: 0px;
+        }
+
+        html{
+            font-family: 'Oxygen', sans-serif;
         }
 
         .navbar {
@@ -121,4 +126,11 @@
         </div>
     </div>
 </body>
+<script>
+    const navHamburger = document.querySelector('#navHamburger');
+
+    navHamburger.addEventListener('click', (e) => {
+        navHamburger.parentElement.classList.toggle('active');
+    })
+</script>
 </html>
